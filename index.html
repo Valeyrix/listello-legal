@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listello Legal</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6f7fb;
+        --card: #ffffff;
+        --text: #172033;
+        --muted: #5f6b85;
+        --line: #d9dfeb;
+        --accent: #246bff;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: linear-gradient(180deg, #eef3ff 0%, var(--bg) 100%);
+        color: var(--text);
+      }
+      .wrap {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 48px 20px 72px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        padding: 28px;
+        box-shadow: 0 12px 36px rgba(23, 32, 51, 0.08);
+      }
+      h1 { margin: 0 0 12px; font-size: 40px; }
+      p { margin: 0 0 16px; line-height: 1.65; color: var(--muted); }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+        margin-top: 24px;
+      }
+      a.box {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px;
+        background: #fbfcff;
+      }
+      a.box:hover { border-color: var(--accent); }
+      .label {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--accent);
+        margin-bottom: 8px;
+      }
+      .title { font-size: 20px; font-weight: 700; margin-bottom: 6px; }
+      .small { font-size: 14px; color: var(--muted); }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="card">
+        <h1>Listello Legal</h1>
+        <p>
+          Legal, privacy, and account deletion information for the Listello mobile app.
+        </p>
+        <div class="grid">
+          <a class="box" href="./en/">
+            <div class="label">English</div>
+            <div class="title">Legal Pages</div>
+            <div class="small">Terms, privacy, and account deletion details.</div>
+          </a>
+          <a class="box" href="./tr/">
+            <div class="label">Turkce</div>
+            <div class="title">Yasal Sayfalar</div>
+            <div class="small">Kullanim kosullari, gizlilik ve hesap silme bilgileri.</div>
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+  </html>

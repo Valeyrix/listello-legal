@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listello Yasal Sayfalar</title>
+    <style>
+      :root {
+        --bg: #f7f8fc;
+        --surface: #ffffff;
+        --text: #172033;
+        --muted: #5f6b85;
+        --line: #dbe1ec;
+        --accent: #246bff;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+      .wrap { max-width: 920px; margin: 0 auto; padding: 40px 20px 72px; }
+      .hero, .card {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        padding: 28px;
+      }
+      .hero { margin-bottom: 18px; }
+      h1, h2 { margin: 0 0 12px; }
+      p { margin: 0 0 12px; line-height: 1.65; color: var(--muted); }
+      .grid { display: grid; gap: 16px; }
+      a.card {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+      }
+      a.card:hover { border-color: var(--accent); }
+      .eyebrow {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--accent);
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="hero">
+        <div class="eyebrow">Listello</div>
+        <h1>Yasal Sayfalar</h1>
+        <p>Gelistirici: IBRAHIM BUCAKLI</p>
+        <p>Iletisim: valeyrix.studio@gmail.com</p>
+      </section>
+
+      <section class="grid">
+        <a class="card" href="./terms/">
+          <div class="eyebrow">Kosullar</div>
+          <h2>Kullanim Kosullari</h2>
+          <p>Listello uygulamasinin kullanim kurallari ve premium ozellik kosullari.</p>
+        </a>
+        <a class="card" href="./privacy/">
+          <div class="eyebrow">Gizlilik</div>
+          <h2>Gizlilik Politikasi</h2>
+          <p>Hesap, checklist, abonelik, AI ve ses verilerinin nasil islendigine dair aciklama.</p>
+        </a>
+        <a class="card" href="./account-deletion/">
+          <div class="eyebrow">Hesap</div>
+          <h2>Hesap Silme</h2>
+          <p>Hesabinizi nasil sileceginiz ve ilgili verilere ne olacagi.</p>
+        </a>
+      </section>
+    </main>
+  </body>
+  </html>
